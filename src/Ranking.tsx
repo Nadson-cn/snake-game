@@ -6,6 +6,7 @@ export const Ranking = (): JSX.Element => {
     JSON.parse(localStorage.getItem("ranking")!) || [];
   return (
     <div className="absolute -ml-44 mt-[5.2rem]">
+      (In development)
       {scoreList
         .sort((a, b) => b - a)
         .map((score, index) => (

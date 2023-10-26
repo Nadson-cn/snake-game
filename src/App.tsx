@@ -181,6 +181,7 @@ export default function App() {
 
       // eslint-disable-next-line @typescript-eslint/no-unsafe-call
       currentList.push(item);
+      score = 0;
 
       // Atualizar o Local Storage com a lista atualizada
       localStorage.setItem("ranking", JSON.stringify(currentList));
@@ -190,6 +191,7 @@ export default function App() {
       direction = "";
       setEndGame(true);
       addItemToList(score);
+      score = 0;
       snake = [initialPosition];
     };
 
